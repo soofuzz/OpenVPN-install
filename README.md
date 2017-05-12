@@ -12,6 +12,8 @@ Here is a preview of the installer :
 
 **You have to enable the TUN module otherwise OpenVPN won't work.** Ask your host if you don't know how to do it. If the TUN module is not enabled, the script will warn you and exit.
 
+You can get a cheap VPS to run this script for $2.50/month worldwide at [Vultr](https://goo.gl/Xyd1Sc) or 3€/month for unlimited bandwidth in France at [PulseHeberg](https://goo.gl/oBhgaj).
+
 First, get the script and make it executable :
 
 ```
@@ -55,6 +57,7 @@ The script is made to work on these OS :
 - Ubuntu 14.04 LTS
 - Ubuntu 16.04 LTS
 - Ubuntu 16.10
+- Ubuntu 17.04
 - CentOS 6
 - CentOS 7
 - Arch Linux
@@ -62,8 +65,6 @@ The script is made to work on these OS :
 (It should also work on Debian unstable/testing and Ubuntu beta).
 
 If your're using an Ubuntu version that is not supported by the script, be aware that it's not supported by Ubuntu either, thus it's insecure.
-
-You can get a cheap VPS to run this script for 3€/month at [PulseHeberg](https://goo.gl/oBhgaj).
 
 ## Features
 
@@ -79,7 +80,7 @@ This fork includes the following features :
 - Up-to-date OpenVPN thanks to [EPEL](http://fedoraproject.org/wiki/EPEL) for CentOS and [swupdate.openvpn.net](https://community.openvpn.net/openvpn/wiki/OpenvpnSoftwareRepos) for Ubuntu and Debian. These are third-party yet trusted repositories.
 - Other improvements !
 
-##DNS
+## DNS
 
 The script will ask you which DNS resolvers you want to use when connected to the VPN.
 
@@ -177,7 +178,7 @@ To quote the [OpenVPN documentation](https://community.openvpn.net/openvpn/wiki/
 
 >Of the currently supported ciphers, OpenVPN currently recommends using AES-256-CBC or AES-128-CBC. OpenVPN 2.4 and newer will also support GCM. For 2.4+, we recommend using AES-256-GCM or AES-128-GCM.
 
-Of course I will update the script to add AES-GCM mode (as weel as ECDH and ECDSA) as soon as OpenVPN 2.4 is released.
+Of course I will update the script to add AES-GCM mode (as well as ECDH and ECDSA) as soon as OpenVPN 2.4 is released.
 
 For now, these cipher are available in the setup :
 
